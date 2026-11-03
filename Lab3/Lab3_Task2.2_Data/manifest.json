@@ -1,0 +1,34 @@
+{
+  "files": {
+    "hello.exe": {
+      "url": "https://www.mscs.dal.ca/~selinger/md5collision/hello.exe",
+      "bytes": 6144,
+      "sha256": "60d13913155644883f130b85eb24d778314014c9479aedb5f6323bf38ad3a451"
+    },
+    "erase.exe": {
+      "url": "https://www.mscs.dal.ca/~selinger/md5collision/erase.exe",
+      "bytes": 6144,
+      "sha256": "1316543942a8c6cd754855500cd37068edbbd8b31c4979d2825a4e799fed6102"
+    },
+    "hello": {
+      "url": "https://www.mscs.dal.ca/~selinger/md5collision/hello",
+      "bytes": 4072,
+      "sha256": "fad878bd261840a4ea4a8277c546d4f46e79bbeb60b059cee41f8b50e28d0e88"
+    },
+    "erase": {
+      "url": "https://www.mscs.dal.ca/~selinger/md5collision/erase",
+      "bytes": 4072,
+      "sha256": "1c4ff4e490b15b2b214f26c5654decccbcbea9eb900f88649dc7b1e42341be56"
+    },
+    "shattered-1.pdf": {
+      "url": "https://raw.githubusercontent.com/cr-marcstevens/sha1collisiondetection/a06f1adbe5522f3c939cd6a3f13d5ec7f4c1a988/test/shattered-1.pdf",
+      "bytes": 422435,
+      "sha256": "2bb787a73e37352f92383abe7e2902936d1059ad9f1ba6daaa9c1e58ee6970d0"
+    },
+    "shattered-2.pdf": {
+      "url": "https://raw.githubusercontent.com/cr-marcstevens/sha1collisiondetection/a06f1adbe5522f3c939cd6a3f13d5ec7f4c1a988/test/shattered-2.pdf",
+      "bytes": 422435,
+      "sha256": "d4488775d29bdef7993367d541064dbdda50d383f89f0aa13a6ff2e0894ba5ff"
+    }
+  }
+}

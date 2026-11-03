@@ -36,8 +36,10 @@ Lab2 dùng Python 3.10 trở lên; chọn kernel đã cài PyCryptodome rồi **
 | Task | Nội dung | Notebook |
 |---|---|---|
 | 2.1 | RSA: sinh khóa, mã hóa/giải mã số và chuỗi, Base64, giải bốn bản mã đề | [Lab3_Task2.1.ipynb](Lab3/Lab3_Task2.1.ipynb) |
+| 2.2 | Đặc tính hàm băm: va chạm MD5 trên thông điệp và chương trình, SHA-1 trên hai PDF | [Lab3_Task2.2.ipynb](Lab3/Lab3_Task2.2.ipynb) |
+| 2.4 | Xác minh chữ ký chứng chỉ X.509 bằng RSA | [Lab3_Task2.4.ipynb](Lab3/Lab3_Task2.4.ipynb) |
 
-Chỉ thực hiện Task 2.1. Notebook độc lập, dùng thư viện chuẩn Python 3.10 trở lên, có đầu ra và 16 kiểm thử đạt; nhập liệu mặc định tắt. Hướng dẫn và quy ước dữ liệu: [Lab 3](Lab3/README.md).
+Task 2.1 dùng thư viện chuẩn Python 3.10 trở lên; nhập liệu mặc định tắt. Task 2.2 kèm dữ liệu mẫu và kết quả đã chạy; phần xem PDF cần `pypdfium2` và `Pillow`. Hướng dẫn và quy ước dữ liệu: [Lab 3](Lab3/README.md).
 
 ## Chạy notebook
 

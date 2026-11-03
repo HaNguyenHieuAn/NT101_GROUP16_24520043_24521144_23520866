@@ -5,22 +5,37 @@ Hà Nguyễn Hiếu An (24520043), Nguyễn Hữu Nghĩa (24521144)
 
 ## Phạm vi
 
-Chỉ thực hiện **Nhiệm vụ 2.1 Mã hóa khóa công khai RSA** trong đề Lab03:
+**Nhiệm vụ 2.1 Mã hóa khóa công khai RSA**:
 
 1. Tính ba cặp khóa công khai và khóa riêng từ các bộ p, q, e đã cho.
 2. Minh họa hai chiều RSA với M = 5 theo yêu cầu bảo mật và xác thực của đề.
 3. Mã hóa `The University of Information Technology` bằng cả ba khóa và biểu diễn Base64.
 4. Khôi phục bốn bản mã Base64, Hex và nhị phân trong đề.
 
-Không triển khai Nhiệm vụ 2.2, 2.3 và 2.4.
+**Nhiệm vụ 2.2 Đặc tính của hàm băm**: so sánh hai thông điệp HEX, chạy cặp mẫu hello/erase, mở hai PDF SHAttered và quan sát va chạm MD5/SHA-1. Notebook và dữ liệu đã kèm sẵn để chạy lại trên Windows.
+
+Repo cũng có notebook Nhiệm vụ 2.4 xác minh chứng chỉ X.509. Chưa triển khai Nhiệm vụ 2.3.
 
 ## Tệp thực hành
 
 | Tệp | Nội dung |
 |---|---|
 | [Lab3_Task2.1.ipynb](Lab3_Task2.1.ipynb) | Notebook độc lập gồm lý thuyết, thuật toán, ví dụ, nhập liệu tùy chọn, kiểm thử và nhận xét |
+| [Lab3_Task2.2.ipynb](Lab3_Task2.2.ipynb) | Ba thí nghiệm va chạm MD5/SHA-1, kết quả đã chạy và kết luận |
+| [Lab3_Task2.2_Data](Lab3_Task2.2_Data) | Cặp chương trình mẫu, hai PDF gốc và manifest nguồn tải/SHA-256 |
+| [Lab3_Task2.4.ipynb](Lab3_Task2.4.ipynb) | Xác minh chữ ký chứng chỉ X.509 bằng RSA |
 
-## Cách chạy
+### Chạy Nhiệm vụ 2.2
+
+```powershell
+python -m pip install jupyterlab ipykernel pypdfium2 Pillow
+```
+
+Mở notebook, chọn kernel đã cài thư viện và **Restart Kernel and Run All** từ thư mục gốc repo hoặc `Lab3`. Không cần mạng khi đã có thư mục dữ liệu. Windows chạy `hello.exe`/`erase.exe`; Linux dùng `hello`/`erase` cùng thư viện chạy i386 và quyền thực thi (`chmod +x hello erase` trong thư mục dữ liệu).
+
+Nguồn mẫu: [Peter Selinger](https://www.mscs.dal.ca/~selinger/md5collision/) và [kho SHA-1 của Marc Stevens](https://github.com/cr-marcstevens/sha1collisiondetection/tree/a06f1adbe5522f3c939cd6a3f13d5ec7f4c1a988/test). PDF được lấy từ kho tác giả do liên kết trong đề trả HTTP 403. `manifest.json` ghi URL, kích thước và SHA-256 của từng tệp. Các ảnh chụp đầu ra JupyterLab dùng cho báo cáo nằm trong `Task2.2_Images/`.
+
+## Cách chạy Nhiệm vụ 2.1
 
 - Python **3.10 trở lên**. Thuật toán chỉ dùng thư viện chuẩn, không cần PyCryptodome hay dữ liệu ngoài.
 - Mở notebook bằng VS Code Python/Jupyter hoặc JupyterLab, chọn kernel Python rồi **Restart Kernel and Run All**.
